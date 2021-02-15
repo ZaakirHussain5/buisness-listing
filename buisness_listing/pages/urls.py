@@ -12,7 +12,7 @@ router.register('category', category_viewset, 'category')
 router.register('social_platform', socialPlatformsViewset, 'social_platform')
 router.register('listing', listingViewset, 'listing')
 router.register('buisness_socials', buisness_socialsViewset, 'buisness_socials')
-router.register('business_address', buisness_socialsViewset, 'business_address')
+router.register('business_address', buisness_addressViewset, 'business_address')
 router.register('business_contact', buisness_ContactViewset, 'business_contact')
 router.register('business_review', Buisness_reviewsViewset, 'business_review')
 

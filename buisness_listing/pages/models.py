@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractBaseUser
 
 class Category(models.Model):
     category = models.CharField(max_length=100)
-    icon = models.CharField(max_length=100)
+    icon = models.CharField(max_length=100, null=True, blank=True)
     description = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -38,7 +38,7 @@ class User(AbstractBaseUser):
 
 class listing(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
     bannerImage = models.ImageField(upload_to='listing/')
     title = models.CharField(max_length=100)
     description = models.TextField(blank=True)

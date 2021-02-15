@@ -35,7 +35,7 @@ class buisness_socialsViewset(viewsets.ModelViewSet):
 class buisness_addressViewset(viewsets.ModelViewSet):
     serializer_class = buisness_addressSerializer
     permission = [permissions.AllowAny]
-    queryset = buisness_socials.objects.all()
+    queryset = buisness_address.objects.all()
 
 class buisness_ContactViewset(viewsets.ModelViewSet):
     serializer_class = buisness_contactSerializer
