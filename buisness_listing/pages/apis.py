@@ -20,7 +20,6 @@ class socialPlatformsViewset(viewsets.ModelViewSet):
     queryset = SocialPlatforms.objects.all()
 
 
-
 class listingViewset(viewsets.ModelViewSet):
     serializer_class = listingSerializer
     permission = [permissions.AllowAny]
