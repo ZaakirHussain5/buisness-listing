@@ -1,0 +1,490 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="main-wrapper">
+		
+            <!-- ============================================================== -->
+            <!-- Top header  -->
+            <!-- ============================================================== -->
+            <!-- Start Navigation -->
+			{% include './partials/header.html' %}
+			<!-- End Navigation -->
+			<div class="clearfix"></div>
+			<!-- ============================================================== -->
+			<!-- Top header  -->
+			<!-- ============================================================== -->	
+
+			
+			<!-- ============================ Course Header Info Start================================== -->
+			<div class="image-cover ed_detail_head lg" style="background:#f4f4f4 url({% static 'assets/img/banner-4.jpg' %});" data-overlay="8">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-lg-7 col-md-9">
+							<div class="ed_detail_wrap light">
+								<ul class="cources_facts_list">
+									<li class="facts-1">Graphic</li>
+									<li class="facts-5">Design</li>
+								</ul>
+								<div class="ed_header_caption">
+									<h2 class="ed_title">Advance Web Designing Courses</h2>
+									<ul>
+										<li><i class="ti-calendar"></i>10 - 20 weeks</li>
+										<li><i class="ti-control-forward"></i>102 Lectures</li>
+										<li><i class="ti-user"></i>502 Student Enrolled</li>
+									</ul>
+								</div>
+								
+								<div class="ed_rate_info">
+									<div class="star_info">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="review_counter">
+										<strong class="good">4.5</strong> 3572 Reviews
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ============================ Course Header Info End ================================== -->
+			
+			<!-- ============================ Course Detail ================================== -->
+			<section class="bg-light">
+				<div class="container">
+					<div class="row">
+					
+						<div class="col-lg-12 col-md-12">
+							
+							<!-- All Info Show in Tab -->
+							<div class="tab_box_info mt-4">
+								<ul class="nav nav-pills mb-3 light" id="pills-tab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="about-tab" data-toggle="pill" href="#about" role="tab" aria-controls="about" aria-selected="true">About us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="overview-tab" data-toggle="pill" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Address Details</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="curriculum-tab" data-toggle="pill" href="#curriculum" role="tab" aria-controls="curriculum" aria-selected="false">Contact Details</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="instructor-tab" data-toggle="pill" href="#instructor" role="tab" aria-controls="instructor" aria-selected="false">Basic Details</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="reviews-tab" data-toggle="pill" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+									</li>
+								</ul>
+							
+								<div class="tab-content" id="pills-tabContent">
+									
+									<!-- About Detail -->
+									<div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+										<!-- Overview -->
+										<div class="edu_wraper">
+											<h4 class="edu_title">About our Business</h4>
+											<p>
+												Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique officiis magni beatae unde nostrum veritatis voluptatibus porro sapiente id rem?
+											</p>
+										</div>
+									</div>
+
+									<!-- Address Detail -->
+									<div class="tab-pane fade show" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+										<!-- Overview -->
+										<div class="edu_wraper">
+											<h4 class="edu_title">Address Details</h4>
+											<p class="edu_title">
+												City :
+											</p>	
+											<p class="edu_title">
+												State :
+											</p>
+											<p class="edu_title">
+												Country :
+											</p>
+											<p class="edu_title">
+												Address :
+											</p>
+										</div>
+									</div>
+									
+									<!-- Contact Detail -->
+									<div class="tab-pane fade" id="curriculum" role="tabpanel" aria-labelledby="curriculum-tab">
+										<!-- Overview -->
+										<div class="edu_wraper">
+											<h4 class="edu_title">Contact Details</h4>
+											<p class="edu_title">
+												Name :
+											</p>	
+											<p class="edu_title">
+												Contact :
+											</p>
+											<p class="edu_title">
+												Fax :
+											</p>
+											<p class="edu_title">
+												Email :
+											</p>
+										</div>
+										<!-- Overview -->
+										<div class="edu_wraper">
+											<h4 class="edu_title">Reach us</h4>
+											<div class="review-form-box form-submit">
+												<form>
+													<div class="row">
+														
+														<div class="col-lg-4 col-md-4 col-sm-12">
+															<div class="form-group">
+																<label>Name</label>
+																<input class="form-control" type="text" placeholder="Your Name">
+															</div>
+														</div>
+														
+														<div class="col-lg-4 col-md-4 col-sm-12">
+															<div class="form-group">
+																<label>Email</label>
+																<input class="form-control" type="email" placeholder="Your Email">
+															</div>
+														</div>
+
+														<div class="col-lg-4 col-md-4 col-sm-12">
+															<div class="form-group">
+																<label>Phone</label>
+																<input class="form-control" type="text" placeholder="Your Phone">
+															</div>
+														</div>
+														
+														<div class="col-lg-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<label>Message</label>
+																<textarea class="form-control ht-140" placeholder="Message"></textarea>
+															</div>
+														</div>
+														
+														<div class="col-lg-12 col-md-12 col-sm-12">
+															<div class="form-group">
+																<button type="submit" class="btn btn-theme">Submit</button>
+															</div>
+														</div>
+														
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<!-- Basic Detail -->
+									<div class="tab-pane fade" id="instructor" role="tabpanel" aria-labelledby="instructor-tab">
+										<!-- Overview -->
+										<div class="edu_wraper">
+											<h4 class="edu_title">Basic Details</h4>
+											<p class="edu_title">
+												Website :
+											</p>	
+											<p class="edu_title">
+												Meta Description :
+											</p>
+											<p class="edu_title">
+												 <ul class="social_info">
+													 <li>Reach Us :</li>
+													<li><a href="#"><i class="ti-facebook"></i></a></li>
+													<li><a href="#"><i class="ti-twitter"></i></a></li>
+													<li><a href="#"><i class="ti-linkedin"></i></a></li>
+													<li><a href="#"><i class="ti-instagram"></i></a></li>
+												</ul>
+												</p>
+											
+										</div>
+									</div>
+									
+									<!-- Reviews Detail -->
+									<div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+										<div class="rating-overview">
+											<div class="rating-overview-box">
+												<span class="rating-overview-box-total">4.2</span>
+												<span class="rating-overview-box-percent">out of 5.0</span>
+												<div class="star-rating" data-rating="5"><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i>
+												</div>
+											</div>
+
+											<div class="rating-bars">
+												<div class="rating-bars-item">
+													<span class="rating-bars-name">5 Star</span>
+													<span class="rating-bars-inner">
+														<span class="rating-bars-rating high" data-rating="4.7">
+															<span class="rating-bars-rating-inner" style="width: 85%;"></span>
+														</span>
+														<strong>85%</strong>
+													</span>
+												</div>
+												<div class="rating-bars-item">
+													<span class="rating-bars-name">4 Star</span>
+													<span class="rating-bars-inner">
+														<span class="rating-bars-rating good" data-rating="3.9">
+															<span class="rating-bars-rating-inner" style="width: 75%;"></span>
+														</span>
+														<strong>75%</strong>
+													</span>
+												</div>
+												<div class="rating-bars-item">
+													<span class="rating-bars-name">3 Star</span>
+													<span class="rating-bars-inner">
+														<span class="rating-bars-rating mid" data-rating="3.2">
+															<span class="rating-bars-rating-inner" style="width: 52.2%;"></span>
+														</span>
+														<strong>53%</strong>
+													</span>
+												</div>
+												<div class="rating-bars-item">
+													<span class="rating-bars-name">1 Star</span>
+													<span class="rating-bars-inner">
+														<span class="rating-bars-rating poor" data-rating="2.0">
+															<span class="rating-bars-rating-inner" style="width:20%;"></span>
+														</span>
+														<strong>20%</strong>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>					
+					</div>
+				
+				</div>
+			</section>
+			<!-- ============================ Course Detail ================================== -->
+			
+			<!-- ============================== Start Newsletter ================================== -->
+			<section class="bg-cover newsletter inverse-theme" style="background:url({% static 'assets/img/banner-2.jpg' %});"
+			data-overlay="9">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-8 col-sm-12">
+						<div class="text-center">
+							<h2>Join Thousand of Happy Students!</h2>
+							<p>Subscribe our newsletter & get latest news and updation!</p>
+							<form class="sup-form">
+								<input type="email" class="form-control sigmup-me" placeholder="Your Email Address" required="required">
+								<input type="submit" class="btn btn-theme" value="Get Started">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+			<!-- ================================= End Newsletter =============================== -->
+			<!-- ============================ Testimonial Start ================================== -->
+	<section style="background:url({% static 'assets/img/testimonial.png' %})">
+		<div class="container">
+		
+			<div class="row justify-content-center">
+				<div class="col-lg-7 col-md-6 col-sm-12">
+					<div class="sec-heading center">
+						<p>What People Say?</p>
+						<h2><span class="theme-cl">Reviews</span> By Our Success & Top Business</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="testimonials_style" class="slick-carousel-3 arrow_middle">
+						<div class="testimonial-detail">
+							<div class="client-detail-box">
+								<div class="pic">
+									<img src="{% static 'assets/img/user-1.jpg' %}" alt="">
+								</div>
+								<div class="client-detail">
+									<h3 class="testimonial-title">Adam Alloriam</h3>
+									<span class="post">Web Developer</span>
+								</div>
+							</div>
+							<p class="description">
+								" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam eligendi facilis itaque minus non odio, quaerat ullam unde  unde voluptatum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi. "
+							</p>
+						</div>
+
+						<div class="testimonial-detail">
+							<div class="client-detail-box">
+								<div class="pic">
+									<img src="{% static 'assets/img/user-2.jpg' %}" alt="">
+								</div>
+								<div class="client-detail">
+									<h3 class="testimonial-title">Illa Millia</h3>
+									<span class="post">Project Manager</span>
+								</div>
+							</div>
+							<p class="description">
+								" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam unde voluptatum eligendi facilis itaque minus non odio, quaerat ullam unde  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi."
+							</p>
+						</div>
+						
+						<div class="testimonial-detail">
+							<div class="client-detail-box">
+								<div class="pic">
+									<img src="{% static 'assets/img/user-3.jpg' %}" alt="">
+								</div>
+								<div class="client-detail">
+									<h3 class="testimonial-title">Rout Millance</h3>
+									<span class="post">Web Designer</span>
+								</div>
+							</div>
+							<p class="description">
+								" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam unde voluptatum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi."
+							</p>
+						</div>
+						
+						<div class="testimonial-detail">
+							<div class="client-detail-box">
+								<div class="pic">
+									<img src="{% static 'assets/img/user-4.jpg' %}" alt="">
+								</div>
+								<div class="client-detail">
+									<h3 class="testimonial-title">williamson</h3>
+									<span class="post">Web Developer</span>
+								</div>
+							</div>
+							<p class="description">
+								" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam unde voluptatum eligendi facilis itaque minus non odio, quaerat ullam unde ? "
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>	
+	<!-- ============================ Testimonial End ================================== -->
+			<!-- ============================ Footer Start ================================== -->
+			<footer class="dark-footer skin-dark-footer">
+				<div>
+					<div class="container">
+						<div class="row">
+							
+							<div class="col-lg-3 col-md-3">
+								<div class="footer-widget">
+									<img src="{% static 'assets/img/logo-light.png' %}" class="img-footer" alt="" />
+									<div class="footer-add">
+										<p>4967  Sardis Sta, Victoria 8007, Montreal.</p>
+										<p>+1 246-345-0695</p>
+										<p>info@learnup.com</p>
+									</div>
+									
+								</div>
+							</div>		
+							<div class="col-lg-2 col-md-3">
+								<div class="footer-widget">
+									<h4 class="widget-title">Navigations</h4>
+									<ul class="footer-menu">
+										<li><a href="about-us.html">About Us</a></li>
+										<li><a href="faq.html">FAQs Page</a></li>
+										<li><a href="checkout.html">Checkout</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li><a href="blog.html">Blog</a></li>
+									</ul>
+								</div>
+							</div>
+									
+							<div class="col-lg-2 col-md-3">
+								<div class="footer-widget">
+									<h4 class="widget-title">New Categories</h4>
+									<ul class="footer-menu">
+										<li><a href="#">Designing</a></li>
+										<li><a href="#">Nusiness</a></li>
+										<li><a href="#">Software</a></li>
+										<li><a href="#">WordPress</a></li>
+										<li><a href="#">PHP</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="col-lg-2 col-md-3">
+								<div class="footer-widget">
+									<h4 class="widget-title">Help & Support</h4>
+									<ul class="footer-menu">
+										<li><a href="#">Documentation</a></li>
+										<li><a href="#">Live Chat</a></li>
+										<li><a href="#">Mail Us</a></li>
+										<li><a href="#">Privacy</a></li>
+										<li><a href="#">Faqs</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="col-lg-3 col-md-12">
+								<div class="footer-widget">
+									<h4 class="widget-title">Download Apps</h4>
+									<a href="#" class="other-store-link">
+										<div class="other-store-app">
+											<div class="os-app-icon">
+												<i class="lni-playstore theme-cl"></i>
+											</div>
+											<div class="os-app-caps">
+												Google Play
+												<span>Get It Now</span>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="other-store-link">
+										<div class="other-store-app">
+											<div class="os-app-icon">
+												<i class="lni-apple theme-cl"></i>
+											</div>
+											<div class="os-app-caps">
+												App Store
+												<span>Now it Available</span>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="row align-items-center">
+							
+							<div class="col-lg-6 col-md-6">
+								<p class="mb-0">© 2020 LearnUp. Designd By <a href="https://themezhub.com/">Themezhub</a>.</p>
+							</div>
+							
+							<div class="col-lg-6 col-md-6 text-right">
+								<ul class="footer-bottom-social">
+									<li><a href="#"><i class="ti-facebook"></i></a></li>
+									<li><a href="#"><i class="ti-twitter"></i></a></li>
+									<li><a href="#"><i class="ti-instagram"></i></a></li>
+									<li><a href="#"><i class="ti-linkedin"></i></a></li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ============================ Footer End ================================== -->
+			
+		<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+			
+
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Wrapper -->
+		<!-- ============================================================== -->
+{% endblock content %}

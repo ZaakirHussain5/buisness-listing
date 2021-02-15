@@ -1,0 +1,907 @@
+{% extends './base.html' %}
+{% load static %}
+
+{% block content %}
+	<!-- ============================================================== -->
+	<!-- Main wrapper - style you can find in pages.scss -->
+	<!-- ============================================================== -->
+	<div id="main-wrapper">
+
+		<!-- ============================================================== -->
+		<!-- Top header  -->
+		<!-- ============================================================== -->
+		<!-- Start Navigation -->
+		{% include './partials/header.html' %}
+		<!-- End Navigation -->
+		<div class="clearfix"></div>
+		<!-- ============================================================== -->
+		<!-- Top header  -->
+		<!-- ============================================================== -->
+
+		<!-- ============================ Hero Banner  Start================================== -->
+		<div class="image-cover hero_banner" style="background:#003783;" data-overlay="0">
+			<div class="container">
+				<!-- Type -->
+				<div class="row align-items-center">
+					<div class="col-lg-7 col-md-7 col-sm-12">
+						<div class="banner-search-2 transparent">
+							<h1 class="big-header-capt cl_2 mb-2">We made it easier to find Business</p>
+							<div class="mt-4">
+								<div class="banner-search shadow_high">
+									<div class="search_hero_wrapping"> 
+										<div class="row">
+											<div class="col-lg-5 col-md-5 col-sm-12 br-right">
+												<div class="form-group">
+													<div class="input-with-icon">
+														<input type="text" class="form-control" placeholder="Keyword" />
+														<img src="{% static 'assets/img/search.svg' %}" class="search-icon" alt="" />
+													</div>
+												</div>
+											</div>
+		
+											<div class="col-lg-5 col-md-4 col-sm-12 small-pad">
+												<div class="form-group">
+													<div class="input-with-icon">
+														<input type="text" class="form-control" placeholder="Keyword" />
+														<img src="{% static 'assets/img/pin.svg' %}" class="search-icon" alt="" />
+													</div>
+												</div>
+											</div>
+											
+											<div class="col-lg-2 col-md-2 col-sm-12 pl-0">
+												<div class="form-group none">
+													<a href="#" class="btn search-btn full-width">Go</a>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-5 col-md-5 col-sm-12">
+						<div class="flixio">
+							<img class="img-fluid" src="{% static 'assets/img/edu_2.png' %}" alt="">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- ============================ Hero Banner End ================================== -->
+
+		<!-- ============================ Trips Facts Start ================================== -->
+		<section class="p-0 trips_top">
+			<div class="container">
+				<div class="trips_wrap">
+					<div class="row m-0">
+
+						<div class="col-lg-4 col-md-4 col-sm-12">
+							<div class="trips">
+								<div class="trips_icons">
+									<i class="ti-video-camera"></i>
+								</div>
+								<div class="trips_detail">
+									<h4>100,000 online courses</h4>
+									<p>Nor again is there anyone who loves or pursues or desires</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-12">
+							<div class="trips">
+								<div class="trips_icons">
+									<i class="ti-medall"></i>
+								</div>
+								<div class="trips_detail">
+									<h4>Expert instruction</h4>
+									<p>Nam libero tempore, cum soluta and nobis est eligendi optio</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-12">
+							<div class="trips none">
+								<div class="trips_icons">
+									<i class="ti-infinite"></i>
+								</div>
+								<div class="trips_detail">
+									<h4>Lifetime access</h4>
+									<p>These cases are perfectly simple and easy to distinguish</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ============================ Trips Facts Start ================================== -->
+  
+	<!-- ========================== Featured Category Section =============================== -->
+	<section>
+		<div class="container">
+		
+			<div class="row justify-content-center">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="sec-heading center">
+						<p>Popular Category</p>
+						<h2><span class="theme-cl">Explore By </span> Category For Your Business</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="edu_cat_2 cat-1">
+						<div class="edu_cat_icons">
+							<a class="pic-main" href="#"><img src="{% static 'assets/img/content.png' %}" class="img-fluid" alt="" /></a>
+						</div>
+						<div class="edu_cat_data">
+							<h4 class="title"><a href="#">Development</a></h4>
+							<ul class="meta">
+								<li class="video"><i class="ti-video-clapper"></i>23 Classes</li>
+							</ul>
+						</div>
+					</div>							
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="edu_cat_2 cat-2">
+						<div class="edu_cat_icons">
+							<a class="pic-main" href="#"><img src="{% static 'assets/img/briefcase.png' %}" class="img-fluid" alt="" /></a>
+						</div>
+						<div class="edu_cat_data">
+							<h4 class="title"><a href="#">Business</a></h4>
+							<ul class="meta">
+								<li class="video"><i class="ti-video-clapper"></i>58 Classes</li>
+							</ul>
+						</div>
+					</div>							
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="edu_cat_2 cat-3">
+						<div class="edu_cat_icons">
+							<a class="pic-main" href="#"><img src="{% static 'assets/img/career.png' %}" class="img-fluid" alt="" /></a>
+						</div>
+						<div class="edu_cat_data">
+							<h4 class="title"><a href="#">Accounting</a></h4>
+							<ul class="meta">
+								<li class="video"><i class="ti-video-clapper"></i>74 Classes</li>
+							</ul>
+						</div>
+					</div>							
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="edu_cat_2 cat-4">
+						<div class="edu_cat_icons">
+							<a class="pic-main" href="#"><img src="{% static 'assets/img/python.png' %}" class="img-fluid" alt="" /></a>
+						</div>
+						<div class="edu_cat_data">
+							<h4 class="title"><a href="#">IT & Software</a></h4>
+							<ul class="meta">
+								<li class="video"><i class="ti-video-clapper"></i>65 Classes</li>
+							</ul>
+						</div>
+					</div>							
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="edu_cat_2 cat-10">
+						<div class="edu_cat_icons">
+							<a class="pic-main" href="#"><img src="{% static 'assets/img/designer.png' %}" class="img-fluid" alt="" /></a>
+						</div>
+						<div class="edu_cat_data">
+							<h4 class="title"><a href="#">Art & Design</a></h4>
+							<ul class="meta">
+								<li class="video"><i class="ti-video-clapper"></i>43 Classes</li>
+							</ul>
+						</div>
+					</div>							
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="edu_cat_2 cat-6">
+						<div class="edu_cat_icons">
+							<a class="pic-main" href="#"><img src="{% static 'assets/img/speaker.png'%}" class="img-fluid" alt="" /></a>
+						</div>
+						<div class="edu_cat_data">
+							<h4 class="title"><a href="#">Marketing</a></h4>
+							<ul class="meta">
+								<li class="video"><i class="ti-video-clapper"></i>82 Classes</li>
+							</ul>
+						</div>
+					</div>							
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="edu_cat_2 cat-7">
+						<div class="edu_cat_icons">
+							<a class="pic-main" href="#"><img src="{% static 'assets/img/photo.png'%}" class="img-fluid" alt="" /></a>
+						</div>
+						<div class="edu_cat_data">
+							<h4 class="title"><a href="#">Photography</a></h4>
+							<ul class="meta">
+								<li class="video"><i class="ti-video-clapper"></i>25 Classes</li>
+							</ul>
+						</div>
+					</div>							
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="edu_cat_2 cat-8">
+						<div class="edu_cat_icons">
+							<a class="pic-main" href="#"><img src="{% static 'assets/img/yoga.png'%}" class="img-fluid" alt="" /></a>
+						</div>
+						<div class="edu_cat_data">
+							<h4 class="title"><a href="#">Health & Fitness</a></h4>
+							<ul class="meta">
+								<li class="video"><i class="ti-video-clapper"></i>43 Classes</li>
+							</ul>
+						</div>
+					</div>							
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<div class="edu_cat_2 cat-9">
+						<div class="edu_cat_icons">
+							<a class="pic-main" href="#"><img src="{% static 'assets/img/health.png'%}" class="img-fluid" alt="" /></a>
+						</div>
+						<div class="edu_cat_data">
+							<h4 class="title"><a href="#">Lifestyle</a></h4>
+							<ul class="meta">
+								<li class="video"><i class="ti-video-clapper"></i>38 Classes</li>
+							</ul>
+						</div>
+					</div>							
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- ========================== Featured Category Section =============================== -->
+
+		<!-- ============================ Featured Courcses Start ================================== -->
+		<section  class="bg-light">
+			<div class="container">
+
+				<div class="row justify-content-center">
+					<div class="col-lg-12 col-md-12 mb-3">
+						<div class="sec-heading2">
+							<div class="sec-left">
+								<h3>Featured Listing</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 p-0">
+
+						<div class="arrow_slide three_slide arrow_middle">
+
+							<!-- Single Slide -->
+							<div class="singles_items">
+								<div class="education_block_grid style_2">
+									<div class="education_block_thumb n-shadow">
+										<a href="details.html"><img src="{% static 'assets/img/co-1.jpg' %}" class="img-fluid" alt=""></a>
+										<div class="cources_price">$520</div>
+									</div>
+
+									<div class="education_block_body">
+										<h4 class="bl-title"><a href="details.html">Tableau For Beginners: Get CA Certified, Grow Your
+												Career</a></h4>
+									</div>
+
+									<div class="cources_info_style3">
+										<ul>
+											<li><i class="ti-eye mr-2"></i>8682 Views</li>
+											<li><i class="ti-time mr-2"></i>6h 40min</li>
+											<li><i class="ti-star text-warning mr-2"></i>4.7 Reviews</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Single Slide -->
+							<div class="singles_items">
+								<div class="education_block_grid style_2">
+									<div class="education_block_thumb n-shadow">
+										<a href="details.html"><img src="{% static 'assets/img/co-1.jpg' %}" class="img-fluid" alt=""></a>
+										<div class="cources_price">$520</div>
+									</div>
+
+									<div class="education_block_body">
+										<h4 class="bl-title"><a href="details.html">Tableau For Beginners: Get CA Certified, Grow Your
+												Career</a></h4>
+									</div>
+
+									<div class="cources_info_style3">
+										<ul>
+											<li><i class="ti-eye mr-2"></i>8682 Views</li>
+											<li><i class="ti-time mr-2"></i>6h 40min</li>
+											<li><i class="ti-star text-warning mr-2"></i>4.7 Reviews</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Single Slide -->
+							<div class="singles_items">
+								<div class="education_block_grid style_2">
+									<div class="education_block_thumb n-shadow">
+										<a href="details.html"><img src="{% static 'assets/img/co-1.jpg' %}" class="img-fluid" alt=""></a>
+										<div class="cources_price">$520</div>
+									</div>
+
+									<div class="education_block_body">
+										<h4 class="bl-title"><a href="details.html">Tableau For Beginners: Get CA Certified, Grow Your
+												Career</a></h4>
+									</div>
+
+									<div class="cources_info_style3">
+										<ul>
+											<li><i class="ti-eye mr-2"></i>8682 Views</li>
+											<li><i class="ti-time mr-2"></i>6h 40min</li>
+											<li><i class="ti-star text-warning mr-2"></i>4.7 Reviews</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Single Slide -->
+							<div class="singles_items">
+								<div class="education_block_grid style_2">
+									<div class="education_block_thumb n-shadow">
+										<a href="details.html"><img src="{% static 'assets/img/co-1.jpg' %}" class="img-fluid" alt=""></a>
+										<div class="cources_price">$520</div>
+									</div>
+
+									<div class="education_block_body">
+										<h4 class="bl-title"><a href="details.html">Tableau For Beginners: Get CA Certified, Grow Your
+												Career</a></h4>
+									</div>
+
+									<div class="cources_info_style3">
+										<ul>
+											<li><i class="ti-eye mr-2"></i>8682 Views</li>
+											<li><i class="ti-time mr-2"></i>6h 40min</li>
+											<li><i class="ti-star text-warning mr-2"></i>4.7 Reviews</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- ============================ Featured Courcses End ================================== -->
+
+		<!-- ============================ Featured Courses Start ================================== -->
+		<section class="gray-bg">
+			<div class="container">
+			
+				<div class="row justify-content-center">
+					<div class="col-lg-5 col-md-6 col-sm-12">
+						<div class="sec-heading center">
+							<p>Hot & Trending</p>
+							<h2><span class="theme-cl">Featured</span> Listing</h2>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					
+					<!-- Grid 1 -->
+					<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+						<div class="singles_items">
+							<div class="education_block_grid style_2">
+								<div class="education_block_thumb n-shadow">
+									<a href="details.html"><img src="{% static 'assets/img/co-1.jpg' %}" class="img-fluid" alt=""></a>
+									<div class="cources_price">$520</div>
+								</div>
+
+								<div class="education_block_body">
+									<h4 class="bl-title"><a href="details.html">Tableau For Beginners: Get CA Certified, Grow Your
+											Career</a></h4>
+								</div>
+
+								<div class="cources_info_style3">
+									<ul>
+										<li><i class="ti-eye mr-2"></i>8682 Views</li>
+										<li><i class="ti-time mr-2"></i>6h 40min</li>
+										<li><i class="ti-star text-warning mr-2"></i>4.7 Reviews</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!-- Grid 1 -->
+					<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+						<div class="singles_items">
+							<div class="education_block_grid style_2">
+								<div class="education_block_thumb n-shadow">
+									<a href="details.html"><img src="{% static 'assets/img/co-1.jpg' %}" class="img-fluid" alt=""></a>
+									<div class="cources_price">$520</div>
+								</div>
+
+								<div class="education_block_body">
+									<h4 class="bl-title"><a href="details.html">Tableau For Beginners: Get CA Certified, Grow Your
+											Career</a></h4>
+								</div>
+
+								<div class="cources_info_style3">
+									<ul>
+										<li><i class="ti-eye mr-2"></i>8682 Views</li>
+										<li><i class="ti-time mr-2"></i>6h 40min</li>
+										<li><i class="ti-star text-warning mr-2"></i>4.7 Reviews</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!-- Grid 1 -->
+					<div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+						<div class="singles_items">
+							<div class="education_block_grid style_2">
+								<div class="education_block_thumb n-shadow">
+									<a href="details.html"><img src="{% static 'assets/img/co-1.jpg' %}" class="img-fluid" alt=""></a>
+									<div class="cources_price">$520</div>
+								</div>
+
+								<div class="education_block_body">
+									<h4 class="bl-title"><a href="details.html">Tableau For Beginners: Get CA Certified, Grow Your
+											Career</a></h4>
+								</div>
+
+								<div class="cources_info_style3">
+									<ul>
+										<li><i class="ti-eye mr-2"></i>8682 Views</li>
+										<li><i class="ti-time mr-2"></i>6h 40min</li>
+										<li><i class="ti-star text-warning mr-2"></i>4.7 Reviews</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+				</div>
+				
+			</div>
+		</section>
+		<!-- ============================ Featured Courses End ================================== -->
+
+		<!-- ========================== About Facts List Section =============================== -->
+			<section>
+				<div class="container">
+					
+					<div class="row align-items-center">
+					
+						<div class="col-lg-7 col-md-7 col-sm-12">
+							<div class="list_facts_wrap">
+								<div class="sec-heading mb-3">
+									<h2>Know about <span class="theme-cl">Our Story</span></h2>
+									<h4> Search thousands of listings and directories</h4>
+								</div>
+								<div class="list_facts">
+									<div class="list_facts_icons"><i class="ti-desktop"></i></div>
+									<div class="list_facts_caption">
+										<h4>Add your listing</h4>
+										<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+									</div>
+								</div>
+								<div class="list_facts">
+									<div class="list_facts_icons"><i class="ti-heart"></i></div>
+									<div class="list_facts_caption">
+										<h4>How customers find you</h4>
+										<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+									</div>
+								</div>
+								<div class="list_facts">
+									<div class="list_facts_icons"><i class="ti-harddrives"></i></div>
+									<div class="list_facts_caption">
+										<h4>Boost your Brand</h4>
+										<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure</p>
+									</div>
+								</div>
+								
+							</div>
+							<a href="#" class="btn btn-modern">Know More<span><i class="ti-arrow-right"></i></span></a>
+						</div>
+						
+						<div class="col-lg-5 col-md-5 col-sm-12">
+							<div class="list_facts_wrap_img">
+							
+								<img src="{% static 'assets/img/edu_2.png' %}" class="img-fluid" alt="" />
+								
+							</div>
+						</div>
+
+					</div>
+					
+				</div>
+				<!--  -->
+				<div class="container pt-5">				
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<div class="single_brand" id="brand-slide">
+								
+								<!-- single -->
+								<div class="single_brands">
+									<img src="{% static 'assets/img/brand-1.png' %}" class="img-fluid" alt="" />
+								</div>
+								
+								<!-- single -->
+								<div class="single_brands">
+									<img src="{% static 'assets/img/brand-2.png' %}" class="img-fluid" alt="" />
+								</div>
+								
+								<!-- single -->
+								<div class="single_brands">
+									<img src="{% static 'assets/img/brand-3.png' %}" class="img-fluid" alt="" />
+								</div>
+								
+								<!-- single -->
+								<div class="single_brands">
+									<img src="{% static 'assets/img/brand-4.png' %}" class="img-fluid" alt="" />
+								</div>
+								
+								<!-- single -->
+								<div class="single_brands">
+									<img src="{% static 'assets/img/brand-5.png' %}" class="img-fluid" alt="" />
+								</div>
+								
+								<!-- single -->
+								<div class="single_brands">
+									<img src="{% static 'assets/img/brand-6.png' %}" class="img-fluid" alt="" />
+								</div>
+								
+								<!-- single -->
+								<div class="single_brands">
+									<img src="{% static 'assets/img/brand-7.png' %}" class="img-fluid" alt="" />
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- ========================== About Facts List Section =============================== -->
+
+			
+		<!-- ============================== Start Newsletter ================================== -->
+		<section class="bg-cover newsletter inverse-theme" style="background:url({% static 'assets/img/banner-2.jpg' %});"
+			data-overlay="9">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-7 col-md-8 col-sm-12">
+						<div class="text-center">
+							<h2>Join Thousand of Happy Students!</h2>
+							<p>Subscribe our newsletter & get latest news and updation!</p>
+							<form class="sup-form">
+								<input type="email" class="form-control sigmup-me" placeholder="Your Email Address" required="required">
+								<input type="submit" class="btn btn-theme" value="Get Started">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ================================= End Newsletter =============================== -->
+  <!-- ============================ Testimonial Start ================================== -->
+	<section style="background:url({% static 'assets/img/testimonial.png' %})">
+		<div class="container">
+		
+			<div class="row justify-content-center">
+				<div class="col-lg-7 col-md-6 col-sm-12">
+					<div class="sec-heading center">
+						<p>What People Say?</p>
+						<h2><span class="theme-cl">Reviews</span> By Our Success & Top Business</h2>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div id="testimonials_style" class="slick-carousel-3 arrow_middle">
+						<div class="testimonial-detail">
+							<div class="client-detail-box">
+								<div class="pic">
+									<img src="{% static 'assets/img/user-1.jpg' %}" alt="">
+								</div>
+								<div class="client-detail">
+									<h3 class="testimonial-title">Adam Alloriam</h3>
+									<span class="post">Web Developer</span>
+								</div>
+							</div>
+							<p class="description">
+								" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam eligendi facilis itaque minus non odio, quaerat ullam unde  unde voluptatum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi. "
+							</p>
+						</div>
+
+						<div class="testimonial-detail">
+							<div class="client-detail-box">
+								<div class="pic">
+									<img src="{% static 'assets/img/user-2.jpg' %}" alt="">
+								</div>
+								<div class="client-detail">
+									<h3 class="testimonial-title">Illa Millia</h3>
+									<span class="post">Project Manager</span>
+								</div>
+							</div>
+							<p class="description">
+								" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam unde voluptatum eligendi facilis itaque minus non odio, quaerat ullam unde  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi."
+							</p>
+						</div>
+						
+						<div class="testimonial-detail">
+							<div class="client-detail-box">
+								<div class="pic">
+									<img src="{% static 'assets/img/user-3.jpg' %}" alt="">
+								</div>
+								<div class="client-detail">
+									<h3 class="testimonial-title">Rout Millance</h3>
+									<span class="post">Web Designer</span>
+								</div>
+							</div>
+							<p class="description">
+								" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam unde voluptatum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi."
+							</p>
+						</div>
+						
+						<div class="testimonial-detail">
+							<div class="client-detail-box">
+								<div class="pic">
+									<img src="{% static 'assets/img/user-4.jpg' %}" alt="">
+								</div>
+								<div class="client-detail">
+									<h3 class="testimonial-title">williamson</h3>
+									<span class="post">Web Developer</span>
+								</div>
+							</div>
+							<p class="description">
+								" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi eligendi facilis itaque minus non odio, quaerat ullam unde voluptatum eligendi facilis itaque minus non odio, quaerat ullam unde ? "
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>	
+	<!-- ============================ Testimonial End ================================== -->
+	
+		<!-- ============================ Footer Start ================================== -->
+		<footer class="dark-footer skin-dark-footer">
+			<div>
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-lg-3 col-md-3">
+							<div class="footer-widget">
+								<img src="{% static 'assets/img/logo-light.png' %}" class="img-footer" alt="" />
+								<div class="footer-add">
+									<p>4967  Sardis Sta, Victoria 8007, Montreal.</p>
+									<p>+1 246-345-0695</p>
+									<p>info@learnup.com</p>
+								</div>
+								
+							</div>
+						</div>		
+						<div class="col-lg-2 col-md-3">
+							<div class="footer-widget">
+								<h4 class="widget-title">Navigations</h4>
+								<ul class="footer-menu">
+									<li><a href="about-us.html">About Us</a></li>
+									<li><a href="faq.html">FAQs Page</a></li>
+									<li><a href="checkout.html">Checkout</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="blog.html">Blog</a></li>
+								</ul>
+							</div>
+						</div>
+								
+						<div class="col-lg-2 col-md-3">
+							<div class="footer-widget">
+								<h4 class="widget-title">New Categories</h4>
+								<ul class="footer-menu">
+									<li><a href="#">Designing</a></li>
+									<li><a href="#">Nusiness</a></li>
+									<li><a href="#">Software</a></li>
+									<li><a href="#">WordPress</a></li>
+									<li><a href="#">PHP</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-lg-2 col-md-3">
+							<div class="footer-widget">
+								<h4 class="widget-title">Help & Support</h4>
+								<ul class="footer-menu">
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Live Chat</a></li>
+									<li><a href="#">Mail Us</a></li>
+									<li><a href="#">Privacy</a></li>
+									<li><a href="#">Faqs</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-lg-3 col-md-12">
+							<div class="footer-widget">
+								<h4 class="widget-title">Download Apps</h4>
+								<a href="#" class="other-store-link">
+									<div class="other-store-app">
+										<div class="os-app-icon">
+											<i class="lni-playstore theme-cl"></i>
+										</div>
+										<div class="os-app-caps">
+											Google Play
+											<span>Get It Now</span>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="other-store-link">
+									<div class="other-store-app">
+										<div class="os-app-icon">
+											<i class="lni-apple theme-cl"></i>
+										</div>
+										<div class="os-app-caps">
+											App Store
+											<span>Now it Available</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row align-items-center">
+						
+						<div class="col-lg-6 col-md-6">
+							<p class="mb-0">© 2020 Find Business. Designd By <a href="http://dragndroptechsolutions.com" target="_blank">Drag n Drop Tech Solutions</a>.</p>
+						</div>
+						
+						<div class="col-lg-6 col-md-6 text-right">
+							<ul class="footer-bottom-social">
+								<li><a href="#"><i class="ti-facebook"></i></a></li>
+								<li><a href="#"><i class="ti-twitter"></i></a></li>
+								<li><a href="#"><i class="ti-instagram"></i></a></li>
+								<li><a href="#"><i class="ti-linkedin"></i></a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- ============================ Footer End ================================== -->
+
+		<!-- Log In Modal -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+				<div class="modal-content" id="registermodal">
+					<span class="mod-close" data-dismiss="modal" aria-hidden="true"><i class="ti-close"></i></span>
+					<div class="modal-body">
+						<h4 class="modal-header-title">Log In</h4>
+						<div class="login-form">
+							<form>
+
+								<div class="form-group">
+									<label>User Name</label>
+									<input type="text" class="form-control" placeholder="Username">
+								</div>
+
+								<div class="form-group">
+									<label>Password</label>
+									<input type="password" class="form-control" placeholder="*******">
+								</div>
+
+								<div class="form-group">
+									<button type="submit" class="btn btn-md full-width pop-login">Login</button>
+								</div>
+
+							</form>
+						</div>
+
+						<div class="social-login mb-3">
+							<ul>
+								<li>
+									<input id="reg" class="checkbox-custom" name="reg" type="checkbox">
+									<label for="reg" class="checkbox-custom-label">Save Password</label>
+								</li>
+								<li class="right"><a href="#" class="theme-cl">Forget Password?</a></li>
+							</ul>
+						</div>
+
+						<div class="modal-divider"><span>Or login via</span></div>
+						<div class="social-login ntr mb-3">
+							<ul>
+								<li><a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Facebook</a></li>
+								<li><a href="#" class="btn connect-google"><i class="ti-google"></i>Google</a></li>
+							</ul>
+						</div>
+
+						<div class="text-center">
+							<p class="mt-2">Haven't Any Account? <a href="register.html" class="link">Click here</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Modal -->
+
+		<!-- Sign Up Modal -->
+		<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="sign-up" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+				<div class="modal-content" id="sign-up">
+					<span class="mod-close" data-dismiss="modal" aria-hidden="true"><i class="ti-close"></i></span>
+					<div class="modal-body">
+						<h4 class="modal-header-title">Sign Up</h4>
+						<div class="login-form">
+							<form>
+
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Full Name">
+								</div>
+
+								<div class="form-group">
+									<input type="email" class="form-control" placeholder="Email">
+								</div>
+
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Username">
+								</div>
+
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="*******">
+								</div>
+
+
+								<div class="form-group">
+									<button type="submit" class="btn btn-md full-width pop-login">Sign Up</button>
+								</div>
+
+							</form>
+						</div>
+
+						<div class="modal-divider"><span>Or Signup via</span></div>
+						<div class="social-login ntr mb-3">
+							<ul>
+								<li><a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Facebook</a></li>
+								<li><a href="#" class="btn connect-google"><i class="ti-google"></i>Google</a></li>
+							</ul>
+						</div>
+
+						<div class="text-center">
+							<p class="mt-3"><i class="ti-user mr-1"></i>Already Have An Account? <a href="#" class="link">Go For
+									LogIn</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Modal -->
+
+		<a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+
+
+	</div>
+	<!-- ============================================================== -->
+	<!-- End Wrapper -->
+	<!-- ============================================================== -->
+
+	<!-- ============================================================== -->
+	<!-- All Jquery -->
+	<!-- ============================================================== -->
+	{% endblock content %}
