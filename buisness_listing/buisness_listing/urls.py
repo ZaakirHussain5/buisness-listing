@@ -22,7 +22,8 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('pages.urls')),
-    path('admindashboard/', include('adminpages.urls')),
+    path('api/', include('listings.urls')),
+    path('admin-panel/', include('adminpages.urls')),
 
 ]
 

@@ -23,6 +23,15 @@ def details(request):
 def pricing(request):
     return render(request, 'pages/pricing.html')
 
-def listings(request):
-    return render(request, 'pages/listing.html')
+def signup(request):
+    return render(request, 'pages/signup.html')
+
+def signin(request):
+    return render(request, 'pages/signin.html')
+
+def myListings(request):
+    return render(request, 'pages/myListings.html')
+
+def editListing(request):
+    return render(request, 'pages/editListing.html')
 

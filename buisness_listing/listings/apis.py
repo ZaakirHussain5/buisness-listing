@@ -1,6 +1,6 @@
 from rest_framework import status, permissions, viewsets
 
-from .serializer import *
+from .serializers import *
 
 class userviewset(viewsets.ModelViewSet):
     serializer_class = UserSerializer

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>Listings Dashboard</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -27,6 +27,12 @@
   <link rel="stylesheet" href="{% static 'dashboard/plugins/daterangepicker/daterangepicker.css' %}">
   <!-- summernote -->
   <link rel="stylesheet" href="{% static 'dashboard/plugins/summernote/summernote-bs4.min.css' %}">
+<style>
+  .img-small{
+    height: 50px;
+    width: 50px;
+  }
+</style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -92,11 +98,11 @@
 <script src="{% static 'dashboard/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js' %}"></script>
 <!-- AdminLTE App -->
 <script src="{% static 'dashboard/dist/js/adminlte.js' %}"></script>
+<script src="{% static 'dashboard/plugins/datatables/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'dashboard/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js' %}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{% static 'dashboard/dist/js/demo.js' %}"></script>
-<script src="{% static 'dashboard/dist/js/dataTable.js' %}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{% static 'dashboard/dist/js/pages/dashboard.js' %}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous"></script>
 {% block script %}
 {% endblock script%}
