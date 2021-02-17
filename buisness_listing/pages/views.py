@@ -1,17 +1,15 @@
 from django.shortcuts import render
+from listings.models import Category,SocialPlatforms
 
 # Create your views here.
 def index(request):
-    return render(request, 'pages/index.html')
+    return render(request, 'pages/index.html',{
+        "categories":Category.objects.all(),
+    })
 
 
 def aboutus(request):
     return render(request, 'pages/about.html')
-
-
-
-def advertise(request):
-    return render(request, 'pages/advertise.html')
 
 
 def contact(request):
@@ -34,4 +32,10 @@ def myListings(request):
 
 def editListing(request):
     return render(request, 'pages/editListing.html')
+
+def allListings(request):
+    category = request.GET.get("category")
+    return render(request, 'pages/allListings.html',{
+        "category":category
+    })
 

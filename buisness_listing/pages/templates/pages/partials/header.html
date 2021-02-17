@@ -1,36 +1,33 @@
+
+{% load static %}
 <div class="header header-light">
     <div class="container">
         <nav id="navigation" class="navigation navigation-landscape">
             <div class="nav-header">
                 <a class="nav-brand" href="#">
-                    <img src="assets/img/logo.png" class="logo" alt="" />
+                    <img src="{% static 'assets/img/logo.png' %}" class="logo" alt="" />
                 </a>
                 <div class="nav-toggle"></div>
             </div>
             <div class="nav-menus-wrapper" style="transition-property: none;">
                 <ul class="nav-menu">
 
-                    <li class="active"><a href="/">Home</a></li>
+                    <li {%if request.path == '/'%} class="active" {% endif %}><a href="/">Home</a></li>
+                    <li {%if request.path == '/allListings'%} class="active" {% endif %}><a href="/allListings">Listings</a></li>
 
-                    <li><a href="#">Listing<span class="submenu-indicator"></span></a>
-                        <ul class="nav-dropdown nav-submenu">									
-                            <li><a href="/details">List Layout with Sidebar</a></li>
+                    <li {%if request.path == '/aboutus'%} class="active" {% endif %}><a href="/aboutus">About Us</a></li>
+
+                    <li {%if request.path == '/details'%} class="active" {% endif %}><a href="#">Category<span class="submenu-indicator"></span></a>
+                        <ul class="nav-dropdown nav-submenu">	
+                            {% for category in headerCategories%}								
+                            <li><a href="/allListings?category={{category.category}}">{{category.category}}</a></li>
+                            {% endfor %}
                         </ul>
                     </li>
 
-                    <li><a href="/advertise">Advertise</a></li>
+                    <li {%if request.path == '/pricing'%} class="active" {% endif %}><a href="/pricing">Pricing</a></li>
 
-                    <li><a href="/aboutus">About Us</a></li>
-
-                    <li><a href="#">Category<span class="submenu-indicator"></span></a>
-                        <ul class="nav-dropdown nav-submenu">									
-                            <li><a href="/details">List Layout with Sidebar</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="/pricing">Pricing</a></li>
-
-                    <li><a href="/contact">Contact</a></li>
+                    <li {%if request.path == '/contact'%} class="active" {% endif %}><a href="/contact">Contact</a></li>
 
                 </ul>
 

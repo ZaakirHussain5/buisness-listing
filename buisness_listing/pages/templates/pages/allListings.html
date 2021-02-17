@@ -1,9 +1,7 @@
 {% extends './base.html' %}
 {% load static %}
 {% load tags %}
-
 {% block content %}
-
 
         <!-- ============================================================== -->
         <!-- Main wrapper - style you can find in pages.scss -->
@@ -14,126 +12,71 @@
             <!-- Top header  -->
             <!-- ============================================================== -->
             <!-- Start Navigation -->
-		   {% show_categories %}
+			{% show_categories %}
 			<!-- End Navigation -->
 			<div class="clearfix"></div>
 			<!-- ============================================================== -->
 			<!-- Top header  -->
-			<!-- ============================================================== -->	
+			<!-- ============================================================== -->
+			<div class="image-cover ed_detail_head lg" style="background:#f4f4f4 url({% static 'assets/img/banner-4.jpg' %});" data-overlay="8">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-md-9">
+							<div class="ed_detail_wrap light">
+								<div class="ed_header_caption">
+									<h2 class="ed_title mb-3">
+                                        All Listings {% if category %} with category {{category}} {% endif %}
+										
+                                    </h2>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search Listing">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-danger">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ========================== Login Section =============================== -->
+			<section class="gray-bg">
+                <div class="container">
+                    
+                    <div class="row">
 
-			<!-- ============================ Page Title Start================================== -->
-			<section class="page-title">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							
-							<div class="breadcrumbs-wrap">
-								<h1 class="breadcrumb-title">Our Pricing</h1>
-								<nav aria-label="breadcrumb">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-										<li class="breadcrumb-item active" aria-current="page">Pricing</li>
-									</ol>
-								</nav>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- ============================ Page Title End ================================== -->	
-			
-			<!-- ============================ Pricing Start ================================== -->
-			<section class="pt-0">
-			
-				<div class="container">
-					
-					<div class="row">
-					
-						<!-- Single Package -->
-						<div class="col-lg-4 col-md-4">
-							<div class="packages_wrapping">
-								
-								<div class="packages_headers">
-									<i class="lni-layers"></i>
-									<h4 class="packages_pr_title">Basic Package</h4>
-									<span class="packages_price-subtitle">Start With Basic Package</span>
-								</div>
-								<div class="packages_price">
-									<h4 class="pr-value">49</h4>
-								</div>
-								<div class="packages_middlebody">
-									<ul>
-										<li>5+ Listings</li>
-										<li>Contact With Agent</li>
-										<li>3 Month Validity</li>
-									</ul>
-								</div>
-								<div class="packages_bottombody">
-									<a href="listing.html" class="btn-pricing">Choose Plan</a>
-								</div>
-								
-							</div>
-						</div>
-						
-						<!-- Single Package -->
-						<div class="col-lg-4 col-md-4">
-							<div class="packages_wrapping recommended">
-								
-								<div class="packages_headers">
-									<i class="lni-diamond"></i>
-									<h4 class="packages_pr_title">Platinum Package</h4>
-									<span class="packages_price-subtitle">Start With Platinum Package</span>
-								</div>
-								<div class="packages_price">
-									<h4 class="pr-value">149</h4>
-								</div>
-								<div class="packages_middlebody">
-									<ul>
-										<li>5+ Listings</li>
-										<li>Contact With Agent</li>
-										<li>3 Month Validity</li>
-									</ul>
-								</div>
-								<div class="packages_bottombody">
-									<a href="listing.html" class="btn-pricing">Choose Plan</a>
-								</div>
-								
-							</div>
-						</div>
-						
-						<!-- Single Package -->
-						<div class="col-lg-4 col-md-4">
-							<div class="packages_wrapping">
-								
-								<div class="packages_headers">
-									<i class="lni-invention"></i>
-									<h4 class="packages_pr_title">Standard Package</h4>
-									<span class="packages_price-subtitle">Start With Standard Package</span>
-								</div>
-								<div class="packages_price">
-									<h4 class="pr-value">199</h4>
-								</div>
-								<div class="packages_middlebody">
-									<ul>
-										<li>5+ Listings</li>
-										<li>Contact With Agent</li>
-										<li>3 Month Validity</li>
-									</ul>
-								</div>
-								<div class="packages_bottombody">
-									<a href="listing.html" class="btn-pricing">Choose Plan</a>
-								</div>
-								
-							</div>
-						</div>
-						
-					</div>
-					
-				</div>
-						
-			</section>
-			<!-- ============================ Pricing End ================================== -->
+                        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                            <div class="singles_items">
+                                <div class="education_block_grid style_2">
+                                    <div class="education_block_thumb n-shadow">
+                                        <a href="details.html"><img src="{% static 'assets/img/co-1.jpg' %}" class="img-fluid" alt=""></a>
+                                        
+                                    </div>
+    
+                                    <div class="education_block_body">
+                                        <h4 class="bl-title"><a href="details.html">Tableau For Beginners: Get CA Certified, Grow Your
+                                                Career</a></h4>
+                                    </div>
+    
+                                    <div class="cources_info_style3">
+                                        <ul>
+                                            <li><i class="ti-eye mr-2"></i>8682 Views</li>
+                                            <li><i class="ti-time mr-2"></i>6h 40min</li>
+                                            <li><i class="ti-star text-warning mr-2"></i>4.7 Reviews</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>	
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </section>
+			<!-- ========================== Login Section =============================== -->
 			
 			
 			<!-- ============================ Footer Start ================================== -->

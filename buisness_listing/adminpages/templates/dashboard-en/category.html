@@ -59,10 +59,9 @@
                 <table class="table" id="sliderTable">
         <thead>
             <tr>
-                <td>Category</td>
-                <td>icon</td>
-                <td>description</td>
-                <td>Action</td>
+                <th>icon</th>
+                <th>Category</th>
+                <th>Action</th>
             </tr>
 
         </thead>
@@ -94,23 +93,27 @@
                 url:'/api/category/',
                 dataSrc: ''
             },
-        columns:[
+        columns:[ 
+            {
+                data: "icon",
+                render:function(data){
+                    return `<img src="${data}" class="img-small">`
+                }
+            },
             {
                 data: "category",
                 
             },
             {
-                data: "icon"
-            },
-            {
-                data: 'description'
-            },
-            {
                 data: id,
                 render: function(id, row, data){
                     return `
-                        <button class="btn edit btn-active btn-info" data-row='${JSON.stringify(data)}'>Edit</button>
-                        <button class="btn btn-active btn-danger delete" data-row="${data.id}">Delete</button>
+                    <button class="btn edit btn-active btn-info btn-sm" data-row='${JSON.stringify(data)}'>
+                         <i class="fa fa-edit"></i>   
+                        </button>
+                        <button class="btn btn-active btn-danger delete btn-sm" data-row="${data.id}">
+                        <i class="fa fa-trash"></i>    
+                        </button>
                     
                     `
                 }

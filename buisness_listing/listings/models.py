@@ -20,16 +20,16 @@ class SocialPlatforms(models.Model):
 class User(AbstractBaseUser):
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=50, unique=True)
+    username = models.CharField(max_length=50, unique=True)
     phonenumber = models.CharField(max_length=10)
-    companyName = models.CharField(max_length=50)
-    altPhoneNumber = models.CharField(max_length=10)
-    address = models.TextField(blank=True)
-    photo = models.ImageField(upload_to='')
-    about = models.CharField(max_length=255)
+    altPhoneNumber = models.CharField(max_length=10,null=True,blank=True)
+    address = models.TextField(null=True,blank=True)
+    photo = models.ImageField(upload_to='',null=True)
+    about = models.TextField(max_length=255,null=True,blank=True)
     registered_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = []
 
 
